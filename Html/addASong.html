@@ -1,102 +1,132 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/Users/RadioAktivemusic/Desktop/FinalProject/css/main.css" />
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-ML9h/UCooefre72ZPxxOHyjbrLT1xKV0AHON1J+OlOV2iwcYemqmWyMfTcfyzLJ1" crossorigin="anonymous">
-    <script src="main.js"></script>
-      </head>
-      <body>
-        
-    
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Splitz</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarColor01">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Add A Song</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Songs Pending</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Songs Confirmed</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="/Users/RadioAktivemusic/Desktop/FinalProject/css/main.css" />
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-ML9h/UCooefre72ZPxxOHyjbrLT1xKV0AHON1J+OlOV2iwcYemqmWyMfTcfyzLJ1"
+    crossorigin="anonymous">
+  <script src="main.js"></script>
+</head>
 
-            <div class = "container add-a-song">
-              <div class="card bg-light mb-3" style="max-width: 36rem;">
-                <div class="card-header">new song split agreement </div>
-                <div class="card-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Song Title</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Song Title here">
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Splitz</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Add A Song</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Songs Pending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Songs Confirmed</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container add-a-song">
+    <div class="card bg-light mb-3" style="max-width: 36rem;">
+      <div class="card-header">new song split agreement </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Song Title</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Song Title here">
+          </div>
+          <div class="container">
+            <div class="card bg-light mb-3" style="max-width: 32rem;">
+              <div class="card-header">add songwriters and composers</div>
+              <div class="card-body">
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputName">Name/StageName</label>
+                    <input type="text" class="form-control" id="inputname">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputPercent">song %</label>
+                    <input type="text" class="form-control" id="inputpercent">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputPRO">P.R.O</label>
+                      <input type="text" class="form-control" id="inputPro">
                     </div>
-                    <div class = "container">
-                    <div class="card bg-light mb-3" style="max-width: 32rem;">
-                      <div class="card-header">add songwriters and composers</div>
-                      <div class="card-body">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputPercent">song %</label>
+                    <input type="text" class="form-control" id="inputpercent">
+                  </div>
+                  <br>
+                  <fieldset class="form-group">
+                    <legend>Song Role</legend>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1"
+                          checked="">
+                        Lyrics
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                        instumental
+                      </label>
+                    </div>
+                    <div class="container">
+                      <button type="button" class="btn btn-secondary btn-lg btn-block">Press here to Add Writer
+                      </button>
+                    </div>
+                    <button type="button" class="btn btn-primary">submit song</button>
+                    <button type="button" class="btn btn-primary">cancel song</button>
 
-                          <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputName">Name/StageName</label>
-                                <input type="text" class="form-control" id="inputname">
-                              </div>
-                              <div class="form-group col-md-2">
-                                  <label for="inputPercent">song %</label>
-                                  <input type="text" class="form-control" id="inputpercent">
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                      <label for="inputPRO">P.R.O</label>
-                                      <input type="text" class="form-control" id="inputPro">
-                                    </div>
-                              </div>
-                              <div class="form-group col-md-2">
-                                  <label for="inputPercent">song %</label>
-                                  <input type="text" class="form-control" id="inputpercent">
-                                </div>
-                                <br>
-                                <div class = "container">
-                                    <button type="button" class="btn btn-secondary btn-lg btn-block">Press here to Add Writer </button>
-                                </div>
-                        </div>
-                      </div>
-                      
                 </div>
               </div>
 
             </div>
-        
-          
-         
-         
-      
-    
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        
-    
+          </div>
+
+      </div>
+
+
+      <main class="container">
+
+      </main>
+      <footer class="footer">
+        <span class="text-muted">&copy;Dynamic Duo LLC 2018</span>
+      </footer>
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
 </body>
+
 </html>
-    
-  
