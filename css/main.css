@@ -9,3 +9,8 @@
 }
 
 
+.container-add-a-song{
+    display:flex;
+    justify-content: center;
+    
+}
