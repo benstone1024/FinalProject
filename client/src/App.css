@@ -59,9 +59,29 @@ html, body {
 
 p{
     font-size: 160%;
-    line-height: 210%;
+    line-height: 100%;
     text-align: justify;
     margin: 3%;
     font-family: sans serif;
+}
+.max1 {
+    display: flex;
+}
+.container {
+    max-width: 1300px;
+    background-color: #FFF;
+    margin: 40px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+}
+.container1 {
+    flex: 1;
+}
+.container2 {
+    flex: 1;
+}
+.container3 {
+    flex:1;
 }
 
