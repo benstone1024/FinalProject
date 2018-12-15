@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import{BrowserRouter} from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
+      
       <div className="">
       <section className="intro">
     <div className="inner">
       <div className="content">
-        <h1> Musician Tool Kit</h1>
+        <h1> Splitz</h1>
         <a className="btn " href="#">Sign In</a>
         <a className="btn ">Sign Up</a>
       </div>
