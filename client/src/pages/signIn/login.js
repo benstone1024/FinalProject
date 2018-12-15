@@ -23,6 +23,14 @@ class logIn extends Component {
        console.log(this.state);
     }
 
+    buttonSubmit = (e) => {
+        const userEmail = document.getElementById("email").value;
+        const userPass = document.getElementById("password").value;
+        window.alert(userEmail+ " " + userPass);
+        
+
+    }
+
      render() {
        return (
          <div className="box">
@@ -36,7 +44,7 @@ class logIn extends Component {
                 <input type="password" id="password" name="" required="" onChange={this.handleChange}/>
                 <label>password</label>
             </div>
-            <button className="buttonOne">Submit</button>
+            <button className="buttonOne" onClick={this.buttonSubmit}>Submit</button>
             <p className="message"> Not Registered? <a href="/signup">Register</a></p>
         </form>
       </div>
